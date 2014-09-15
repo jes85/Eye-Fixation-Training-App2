@@ -20,6 +20,8 @@
 
 #define kHeaderHeight           50;
 
+static const NSString *kVisualAcuitySetting = @"Visual Acuity Setting";
+
 @interface EFTSettingsTableViewController ()
 @property (nonatomic) NSArray *visualAcuityList;
 @end
@@ -91,6 +93,10 @@
     // Configure the cell...
     cell.textLabel.text = self.visualAcuityList[indexPath.row];
     
+    if(indexPath.row ==0){//change to find out which one is selected
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    
     return cell;
 }
 
@@ -111,8 +117,8 @@
 			}
 		}
 		selectedCell.accessoryType = UITableViewCellAccessoryCheckmark;
-        
-		
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+		[userDefaults setObject:self.visualAcuityList[indexPath.row] forKey:kVisualAcuitySetting];
 	
 }
 
