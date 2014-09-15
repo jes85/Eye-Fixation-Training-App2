@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F8E378819C54A7600EE5D54 /* EFTSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E378719C54A7600EE5D54 /* EFTSettingsTableViewController.m */; };
 		3FBF6DB419C386480097F369 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBF6DB319C386480097F369 /* Foundation.framework */; };
 		3FBF6DB619C386480097F369 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBF6DB519C386480097F369 /* CoreGraphics.framework */; };
 		3FBF6DB819C386480097F369 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBF6DB719C386480097F369 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F8E378619C54A7600EE5D54 /* EFTSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTSettingsTableViewController.h; sourceTree = "<group>"; };
+		3F8E378719C54A7600EE5D54 /* EFTSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTSettingsTableViewController.m; sourceTree = "<group>"; };
 		3FBF6DB019C386480097F369 /* Eye Fixation Training app2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eye Fixation Training app2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBF6DB319C386480097F369 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FBF6DB519C386480097F369 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +123,8 @@
 				3FBF6DC819C386480097F369 /* Main_iPad.storyboard */,
 				3FBF6DCB19C386480097F369 /* EFTViewController.h */,
 				3FBF6DCC19C386480097F369 /* EFTViewController.m */,
+				3F8E378619C54A7600EE5D54 /* EFTSettingsTableViewController.h */,
+				3F8E378719C54A7600EE5D54 /* EFTSettingsTableViewController.m */,
 				3FBF6DCE19C386480097F369 /* Images.xcassets */,
 				3FBF6DBA19C386480097F369 /* Supporting Files */,
 			);
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8E378819C54A7600EE5D54 /* EFTSettingsTableViewController.m in Sources */,
 				3FBF6DC419C386480097F369 /* EFTAppDelegate.m in Sources */,
 				3FBF6DC019C386480097F369 /* main.m in Sources */,
 				3FBF6DCD19C386480097F369 /* EFTViewController.m in Sources */,
@@ -471,6 +477,7 @@
 				3FBF6DE719C386480097F369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FBF6DE819C386480097F369 /* Build configuration list for PBXNativeTarget "Eye Fixation Training app2Tests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +486,7 @@
 				3FBF6DEA19C386480097F369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
