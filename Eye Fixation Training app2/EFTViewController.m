@@ -15,16 +15,15 @@
 #define kVisualAcuity4          @"20/400"
 #define kVisualAcuity5          @"5' 200"
 
-
-
+#define kVisualAcuitySetting    @"Visual Acuity Setting"
 static const CGFloat kShrinkFactor = .8;
-static const NSString *kVisualAcuitySetting = @"Visual Acuity Setting";
+
 
 @interface EFTViewController ()
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 @property (weak, nonatomic) IBOutlet UILabel *label2;
-@property (weak, nonatomic) IBOutlet UILabel *label3;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UIImageView *illinoisRetinaCenterImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *redCrossImageView;
@@ -67,14 +66,10 @@ static const NSString *kVisualAcuitySetting = @"Visual Acuity Setting";
     if(![userDefaults stringForKey:kVisualAcuitySetting]){
         [userDefaults setObject:kVisualAcuity1 forKey:kVisualAcuitySetting];
     }
-    
     NSString *visualAcuity = [userDefaults stringForKey:kVisualAcuitySetting];
-    NSLog(@"%@", visualAcuity);
     CGSize size = [[self.VASizes objectForKey:visualAcuity] CGSizeValue];
     
     [self saveCrossSize:size];
-    
-    
     
     [self displayLabels];
     
@@ -150,7 +145,6 @@ static const NSString *kVisualAcuitySetting = @"Visual Acuity Setting";
     self.titleLabel.hidden=YES;
     self.label1.hidden=YES;
     self.label2.hidden=YES;
-    self.label3.hidden=YES;
     
     self.startButton.hidden=YES;
     self.illinoisRetinaCenterImageView.hidden=YES;
@@ -164,7 +158,6 @@ static const NSString *kVisualAcuitySetting = @"Visual Acuity Setting";
     self.titleLabel.hidden=NO;
     self.label1.hidden=NO;
     self.label2.hidden=NO;
-    self.label3.hidden=NO;
     
     self.startButton.hidden=NO;
     self.illinoisRetinaCenterImageView.hidden=NO;

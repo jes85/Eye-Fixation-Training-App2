@@ -8,19 +8,15 @@
 
 #import "EFTSettingsTableViewController.h"
 
-#define kVisualAcuity1          @"20/50"
-#define kVisualAcuity2          @"20/100"
-#define kVisualAcuity3          @"20/200"
-#define kVisualAcuity4          @"20/400"
-#define kVisualAcuity5          @"5' 200"
+#define kVisualAcuity1                      @"20/50"
+#define kVisualAcuity2                      @"20/100"
+#define kVisualAcuity3                      @"20/200"
+#define kVisualAcuity4                      @"20/400"
+#define kVisualAcuity5                      @"5' 200"
 
-#define kVisualAcuityCellReuseIdentifier @"Visual Acuity Cell"
-
-#define kSettingsTitle          @"Select Visual Acuity"
-
-#define kHeaderHeight           50;
-
-static const NSString *kVisualAcuitySetting = @"Visual Acuity Setting";
+#define kVisualAcuityCellReuseIdentifier    @"Visual Acuity Cell"
+#define kSettingsTitle                      @"Select Visual Acuity"
+#define kVisualAcuitySetting                @"Visual Acuity Setting"
 
 @interface EFTSettingsTableViewController ()
 @property (nonatomic) NSArray *visualAcuityList;
@@ -73,10 +69,10 @@ static const NSString *kVisualAcuitySetting = @"Visual Acuity Setting";
     
     return kSettingsTitle;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+/*- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return kHeaderHeight;
-}
+}*/
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
@@ -91,11 +87,18 @@ static const NSString *kVisualAcuitySetting = @"Visual Acuity Setting";
     
     
     // Configure the cell...
-    cell.textLabel.text = self.visualAcuityList[indexPath.row];
-    
-    if(indexPath.row ==0){//change to find out which one is selected
+    NSString *visualAcuity =self.visualAcuityList[indexPath.row];
+    cell.textLabel.text =visualAcuity;
+   
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if([[userDefaults objectForKey:kVisualAcuitySetting] isEqualToString:visualAcuity]){
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+
+    }
+    /*if(indexPath.row ==0){//change to find out which one is selected
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
+    */
     
     return cell;
 }
