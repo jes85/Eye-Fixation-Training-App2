@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @interface EFTSettingsTableViewController : UITableViewController
+@property (nonatomic) NSArray *visualAcuityList;
 
 @end

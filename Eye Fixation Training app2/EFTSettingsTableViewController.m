@@ -7,7 +7,6 @@
 //
 
 #import "EFTSettingsTableViewController.h"
-
 #define kVisualAcuity1                      @"20/50"
 #define kVisualAcuity2                      @"20/100"
 #define kVisualAcuity3                      @"20/200"
@@ -19,7 +18,6 @@
 #define kVisualAcuitySetting                @"Visual Acuity Setting"
 
 @interface EFTSettingsTableViewController ()
-@property (nonatomic) NSArray *visualAcuityList;
 @end
 
 @implementation EFTSettingsTableViewController
@@ -95,10 +93,7 @@
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
 
     }
-    /*if(indexPath.row ==0){//change to find out which one is selected
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    }
-    */
+  
     
     return cell;
 }

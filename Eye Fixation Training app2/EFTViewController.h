@@ -10,4 +10,6 @@
 
 @interface EFTViewController : UIViewController
 
+@property (nonatomic) NSDictionary *VASizes;
+
 @end

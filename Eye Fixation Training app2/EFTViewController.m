@@ -40,7 +40,6 @@ static const CGFloat kShrinkFactor = .8;
 @property (nonatomic) CGRect visibleFrame;
 @property (nonatomic) CGFloat directionsButtonYLocation;
 
-@property (nonatomic) NSDictionary *VASizes;
 @end
 
 @implementation EFTViewController
@@ -133,11 +132,7 @@ static const CGFloat kShrinkFactor = .8;
 }
 -(void)saveCrossSize:(CGSize) size
 {
-    /*
-    self.redCrossHeight = self.redCrossImageView.frame.size.height;//change based on settings and platform
-    self.redCrossWidth = self.redCrossImageView.frame.size.width;
-     */
-    NSLog(@"%f", size.width);
+   
     self.redCrossSize = size;
 }
 - (void)hideLabels
