@@ -14,13 +14,29 @@
 #define kVisualAcuityCellReuseIdentifier    @"Visual Acuity Cell"
 #define kVisualAcuitySetting                @"Visual Acuity Setting"
 
+#define kVisualAcuityCellReuseIdentifier2050    @"VA 20/50"
+#define kVisualAcuityCellReuseIdentifier20100    @"VA 20/100"
+#define kVisualAcuityCellReuseIdentifier20200    @"VA 20/200"
+#define kVisualAcuityCellReuseIdentifier20400    @"VA 20/400"
+#define kVisualAcuityCellReuseIdentifier5200    @"VA 5' 200"
+
+#define kRowHeight0                             125
+#define kRowHeight1                             150
+#define kRowHeight2                             175
+#define kRowHeight3                             200
+#define kRowHeight4                             225
+
+#define kNumberOfVAs                            5
 
 @interface EFTiPadSettingsTableViewController ()
 @property (nonatomic) NSDictionary *VASizes;
+@property (nonatomic) NSMutableArray *VACellReuseIdentifiers;
+@property (nonatomic) NSMutableArray *VACellRowHeights;
 
 @end
 
 @implementation EFTiPadSettingsTableViewController
+
 
 
 -(void)viewDidLoad
@@ -29,24 +45,47 @@
     
     EFTViewController *vc = (EFTViewController *)[self.tabBarController.viewControllers objectAtIndex:0];
     self.VASizes = vc.VASizes;
+    
+    
+    self.VACellReuseIdentifiers = [[NSMutableArray alloc]initWithCapacity:kNumberOfVAs];
+    [self.VACellReuseIdentifiers addObject:kVisualAcuityCellReuseIdentifier2050];
+    [self.VACellReuseIdentifiers addObject:kVisualAcuityCellReuseIdentifier20100];
+    [self.VACellReuseIdentifiers addObject:kVisualAcuityCellReuseIdentifier20200];
+    [self.VACellReuseIdentifiers addObject:kVisualAcuityCellReuseIdentifier20400];
+    [self.VACellReuseIdentifiers addObject:kVisualAcuityCellReuseIdentifier5200];
+    
+    self.VACellRowHeights = [[NSMutableArray alloc]initWithCapacity:kNumberOfVAs];
+    [self.VACellRowHeights addObject:[NSNumber numberWithInteger: kRowHeight0 ]];
+    [self.VACellRowHeights addObject:[NSNumber numberWithInteger: kRowHeight1 ]];
+    [self.VACellRowHeights addObject:[NSNumber numberWithInteger: kRowHeight2 ]];
+    [self.VACellRowHeights addObject:[NSNumber numberWithInteger: kRowHeight3 ]];
+    [self.VACellRowHeights addObject:[NSNumber numberWithInteger: kRowHeight4 ]];
 
     
     
+    
+
+    
+    
+    
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 350;
+    CGFloat height = [self.VACellRowHeights[indexPath.row] integerValue];
+    return height;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    EFTiPadSettingsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kVisualAcuityCellReuseIdentifier forIndexPath:indexPath];
+    EFTiPadSettingsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.VACellReuseIdentifiers[indexPath.row] forIndexPath:indexPath];
     
     // Configure the cell...
+    
     
     // Set text
     NSString *visualAcuity =self.visualAcuityList[indexPath.row];
     cell.textLabel.text =visualAcuity;
     
+    /*
     // Set red cross size based on visual acuity
     NSValue *value = [self.VASizes objectForKey:visualAcuity];
     CGSize size = [value CGSizeValue];
@@ -55,7 +94,7 @@
     cell.redCrossImageView.frame = frame;
     NSLog(@"%f", cell.redCrossImageView.frame.size.height);
     
-    
+    */
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     if([[userDefaults objectForKey:kVisualAcuitySetting] isEqualToString:visualAcuity]){
@@ -63,7 +102,7 @@
         
     }
     
-    //[cell setNeedsLayout];
+    [cell setNeedsLayout];
     return cell;
 }
 

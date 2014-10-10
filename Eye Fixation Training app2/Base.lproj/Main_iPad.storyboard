@@ -13,21 +13,73 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Visual Acuity Cell" rowHeight="211" id="tT5-V6-tlm" customClass="EFTiPadSettingsTableViewCell">
-                                <rect key="frame" x="0.0" y="86" width="768" height="211"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VA 20/50" rowHeight="125" id="tT5-V6-tlm" customClass="EFTiPadSettingsTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="768" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tT5-V6-tlm" id="ZI9-KE-DL0">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="210"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="124"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedCross" translatesAutoresizingMaskIntoConstraints="NO" id="rar-62-frA">
-                                            <rect key="frame" x="284" y="5" width="200" height="200"/>
+                                            <rect key="frame" x="334" y="12" width="100" height="100"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="redCrossImageView" destination="rar-62-frA" id="QFb-KC-1VY"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VA 20/100" rowHeight="150" id="WIq-w6-6Sd">
+                                <rect key="frame" x="0.0" y="211" width="768" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WIq-w6-6Sd" id="E6F-ON-4Kc">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="149"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedCross" translatesAutoresizingMaskIntoConstraints="NO" id="2LA-bu-nDC">
+                                            <rect key="frame" x="322" y="12" width="125" height="125"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VA 20/200" rowHeight="175" id="0pP-HD-RWp">
+                                <rect key="frame" x="0.0" y="361" width="768" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0pP-HD-RWp" id="Etf-el-rUL">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="174"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedCross" translatesAutoresizingMaskIntoConstraints="NO" id="Tkc-GS-lLa">
+                                            <rect key="frame" x="309" y="12" width="150" height="150"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VA 20/400" rowHeight="200" id="JrU-fZ-3Ru">
+                                <rect key="frame" x="0.0" y="536" width="768" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JrU-fZ-3Ru" id="7dW-Zj-jjk">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="199"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedCross" translatesAutoresizingMaskIntoConstraints="NO" id="xnY-9y-9Dh">
+                                            <rect key="frame" x="297" y="12" width="175" height="175"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VA 5' 200" rowHeight="225" id="S20-c9-5NJ">
+                                <rect key="frame" x="0.0" y="736" width="768" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S20-c9-5NJ" id="B3t-el-Fjp">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="224"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedCross" translatesAutoresizingMaskIntoConstraints="NO" id="iZS-Hy-493">
+                                            <rect key="frame" x="284" y="12" width="200" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
