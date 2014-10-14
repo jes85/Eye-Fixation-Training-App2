@@ -17,7 +17,7 @@
 
 @interface EFTiPadSettingsTableViewController ()
 @property (nonatomic) NSDictionary *VASizes;
-
+@property (nonatomic) NSArray *rowHeights;
 @end
 
 @implementation EFTiPadSettingsTableViewController
@@ -29,13 +29,14 @@
     
     EFTViewController *vc = (EFTViewController *)[self.tabBarController.viewControllers objectAtIndex:0];
     self.VASizes = vc.VASizes;
+    self.rowHeights = @[@100, @150, @200, @250, @300];
 
     
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 350;
+    return [self.rowHeights[indexPath.row] floatValue];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -53,6 +54,8 @@
     CGPoint origin = cell.redCrossImageView.frame.origin;
     CGRect frame = CGRectMake(origin.x, origin.y, size.width, size.height);
     cell.redCrossImageView.frame = frame;
+    
+    [cell.contentView addSubview:cell.redCrossImageView];
     NSLog(@"%f", cell.redCrossImageView.frame.size.height);
     
     
@@ -63,58 +66,9 @@
         
     }
     
-    //[cell setNeedsLayout];
     return cell;
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
