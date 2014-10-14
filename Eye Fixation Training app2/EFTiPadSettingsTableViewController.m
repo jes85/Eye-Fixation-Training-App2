@@ -10,15 +10,13 @@
 #import "EFTiPadSettingsTableViewCell.h"
 #import "EFTViewController.h"
 
+#define kVisualAcuitySetting                        @"Visual Acuity Setting"
 
-#define kVisualAcuityCellReuseIdentifier    @"Visual Acuity Cell"
-#define kVisualAcuitySetting                @"Visual Acuity Setting"
-
-#define kVisualAcuityCellReuseIdentifier2050    @"VA 20/50"
-#define kVisualAcuityCellReuseIdentifier20100    @"VA 20/100"
-#define kVisualAcuityCellReuseIdentifier20200    @"VA 20/200"
-#define kVisualAcuityCellReuseIdentifier20400    @"VA 20/400"
-#define kVisualAcuityCellReuseIdentifier5200    @"VA 5' 200"
+#define kVisualAcuityCellReuseIdentifier2050        @"VA 20/50"
+#define kVisualAcuityCellReuseIdentifier20100       @"VA 20/100"
+#define kVisualAcuityCellReuseIdentifier20200       @"VA 20/200"
+#define kVisualAcuityCellReuseIdentifier20400       @"VA 20/400"
+#define kVisualAcuityCellReuseIdentifier5200        @"VA 5' 200"
 
 #define kRowHeight0                             125
 #define kRowHeight1                             150
@@ -29,6 +27,7 @@
 #define kNumberOfVAs                            5
 
 @interface EFTiPadSettingsTableViewController ()
+
 @property (nonatomic) NSDictionary *VASizes;
 @property (nonatomic) NSMutableArray *VACellReuseIdentifiers;
 @property (nonatomic) NSMutableArray *VACellRowHeights;
@@ -84,7 +83,8 @@
     // Set text
     NSString *visualAcuity =self.visualAcuityList[indexPath.row];
     cell.textLabel.text =visualAcuity;
-    
+    //[cell bringSubviewToFront:cell.redCrossImageView];
+    [cell.contentView addSubview:cell.redCrossImageView];
     /*
     // Set red cross size based on visual acuity
     NSValue *value = [self.VASizes objectForKey:visualAcuity];

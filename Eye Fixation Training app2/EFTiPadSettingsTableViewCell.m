@@ -9,7 +9,7 @@
 #import "EFTiPadSettingsTableViewCell.h"
 
 @implementation EFTiPadSettingsTableViewCell
-
+/*
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -23,7 +23,17 @@
     }
     return self;
 }
+*/
+-(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if(self){
+        //[self bringSubviewToFront:self.redCrossImageView];
+        [self.contentView addSubview:self.redCrossImageView];
+    }
+    return self;
 
+}
 - (void)awakeFromNib
 {
     // Initialization code
@@ -40,6 +50,7 @@
 // need to call -setNeedsLayout on the cell for it to add the image view to its view hierarchy. We
 // asked the change dictionary to contain the old value because this only needs to happen if the
 // image was previously nil.
+/*
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
                         change:(NSDictionary *)change
@@ -52,6 +63,7 @@
             [self setNeedsLayout];
         }
 }
+ */
 
 
 @end

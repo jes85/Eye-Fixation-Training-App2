@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="LGb-h1-6fv">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -142,8 +141,8 @@
                     <connections>
                         <outlet property="directionsButton" destination="ej8-x1-q7i" id="3oB-08-BQ7"/>
                         <outlet property="illinoisRetinaCenterImageView" destination="sXE-id-p2h" id="x2p-tj-Cir"/>
-                        <outlet property="label1" destination="OPY-2h-Bw1" id="Cfo-iY-GFn"/>
-                        <outlet property="label2" destination="H6V-fc-J7O" id="W17-kx-OWX"/>
+                        <outlet property="instructionLabel1" destination="OPY-2h-Bw1" id="LRl-mB-s6y"/>
+                        <outlet property="instructionLabel2" destination="H6V-fc-J7O" id="Rmr-9I-JHR"/>
                         <outlet property="redCrossImageView" destination="chz-8Q-g4I" id="Azy-qR-Emf"/>
                         <outlet property="startButton" destination="7w7-pM-Tg4" id="t17-g0-XUB"/>
                         <outlet property="titleLabel" destination="C2L-Te-L8i" id="xff-2B-PoI"/>

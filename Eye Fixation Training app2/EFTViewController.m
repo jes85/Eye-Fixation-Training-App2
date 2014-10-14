@@ -22,21 +22,16 @@ static const CGFloat kShrinkFactor = .8;
 @interface EFTViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *label1;
-@property (weak, nonatomic) IBOutlet UILabel *label2;
+@property (weak, nonatomic) IBOutlet UILabel *instructionLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *instructionLabel2;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UIImageView *illinoisRetinaCenterImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *redCrossImageView;
 @property (weak, nonatomic) IBOutlet UIButton *directionsButton;
 
 
-@property (nonatomic) NSArray *labels;
-
 @property (nonatomic) CGSize redCrossSize;
-
-
 @property (nonatomic) NSUInteger redCrossPressedCount;
-
 @property (nonatomic) CGRect visibleFrame;
 @property (nonatomic) CGFloat directionsButtonYLocation;
 
@@ -69,10 +64,7 @@ static const CGFloat kShrinkFactor = .8;
     CGSize size = [[self.VASizes objectForKey:visualAcuity] CGSizeValue];
     
     [self saveCrossSize:size];
-    
     [self displayLabels];
-    
-   
     self.redCrossPressedCount = 0;
     
 }
@@ -84,11 +76,7 @@ static const CGFloat kShrinkFactor = .8;
         if(!_VASizes) _VASizes = [[NSDictionary alloc]init];
         return _VASizes;
     }
--(NSArray *)labels
-{
-    if(_labels)_labels = [[NSMutableArray alloc]init];
-    return _labels;
-}
+
 - (CGRect)getVisibleFrame {
     CGRect frame;
     
@@ -138,8 +126,8 @@ static const CGFloat kShrinkFactor = .8;
 - (void)hideLabels
 {
     self.titleLabel.hidden=YES;
-    self.label1.hidden=YES;
-    self.label2.hidden=YES;
+    self.instructionLabel1.hidden=YES;
+    self.instructionLabel2.hidden=YES;
     
     self.startButton.hidden=YES;
     self.illinoisRetinaCenterImageView.hidden=YES;
@@ -151,8 +139,8 @@ static const CGFloat kShrinkFactor = .8;
 -(void)displayLabels
 {
     self.titleLabel.hidden=NO;
-    self.label1.hidden=NO;
-    self.label2.hidden=NO;
+    self.instructionLabel1.hidden=NO;
+    self.instructionLabel2.hidden=NO;
     
     self.startButton.hidden=NO;
     self.illinoisRetinaCenterImageView.hidden=NO;
