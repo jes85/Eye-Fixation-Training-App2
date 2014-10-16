@@ -23,6 +23,8 @@
 #define kRowHeight3                             200
 #define kRowHeight4                             225
 
+#define kHeaderHeight                           30
+
 @interface EFTiPadSettingsTableViewController ()
 
 @property (nonatomic) NSDictionary *VASizes;
@@ -64,7 +66,10 @@
 {
     return [self.VACellRowHeights[indexPath.row] floatValue];
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return kHeaderHeight;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     EFTiPadSettingsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.VACellReuseIdentifiers[indexPath.row] forIndexPath:indexPath];

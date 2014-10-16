@@ -3,6 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Settings-->
@@ -118,40 +119,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Directions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdl-3X-LNu">
-                                <rect key="frame" x="209" y="58" width="350" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdl-3X-LNu">
+                                <rect key="frame" x="297" y="52" width="175" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Identify the center of the cross and fixate on it for 10 seconds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="jfv-NY-tAR">
-                                <rect key="frame" x="209" y="147" width="350" height="78"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identify the center of the cross and fixate on it for 10 seconds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="jfv-NY-tAR">
+                                <rect key="frame" x="134" y="148" width="500" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="eNW-oE-ueZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap anywhere to change the location of the cross!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="gOV-vb-sBN">
-                                <rect key="frame" x="209" y="233" width="350" height="73"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap anywhere to change the location of the cross!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="gOV-vb-sBN">
+                                <rect key="frame" x="134" y="250" width="500" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="xpg-u6-bqd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedCross" translatesAutoresizingMaskIntoConstraints="NO" id="rJq-32-upX">
-                                <rect key="frame" x="16" y="206" width="100" height="100"/>
+                                <rect key="frame" x="32" y="292" width="100" height="100"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKT-2g-b21">
-                                <rect key="frame" x="20" y="20" width="161" height="83"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Directions" backgroundImage="Rectangle">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="directionsButtonTouched:" destination="UrH-w5-LkV" eventType="touchUpInside" id="mWn-9u-GaD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvv-b4-nUd">
-                                <rect key="frame" x="244" y="362" width="300" height="300"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvv-b4-nUd">
+                                <rect key="frame" x="234" y="362" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0Wf-cs-WhH"/>
+                                    <constraint firstAttribute="height" constant="300" id="cKU-mf-eET"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Start" backgroundImage="Circle">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -161,11 +161,44 @@
                                     <action selector="startButtonPressed:" destination="UrH-w5-LkV" eventType="touchUpInside" id="qya-SQ-D44"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IllinoisRetinaCenter" translatesAutoresizingMaskIntoConstraints="NO" id="yIE-2R-fny">
-                                <rect key="frame" x="194" y="711" width="380" height="238"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IllinoisRetinaCenter" translatesAutoresizingMaskIntoConstraints="NO" id="yIE-2R-fny">
+                                <rect key="frame" x="194" y="718" width="380" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="238" id="Hmz-wc-hP8"/>
+                                    <constraint firstAttribute="width" constant="380" id="vyy-f9-cnw"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKT-2g-b21">
+                                <rect key="frame" x="20" y="20" width="161" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="rgT-nP-ni6"/>
+                                    <constraint firstAttribute="height" constant="83" id="wog-CV-D1i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Directions" backgroundImage="Rectangle">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="directionsButtonTouched:" destination="UrH-w5-LkV" eventType="touchUpInside" id="mWn-9u-GaD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jfv-NY-tAR" secondAttribute="centerX" id="4OB-LB-8VT"/>
+                            <constraint firstItem="wvv-b4-nUd" firstAttribute="top" secondItem="gOV-vb-sBN" secondAttribute="bottom" multiplier="1.1" constant="8" symbolic="YES" id="5ux-fG-huW"/>
+                            <constraint firstAttribute="centerX" secondItem="Kdl-3X-LNu" secondAttribute="centerX" id="C50-ln-UCK"/>
+                            <constraint firstItem="jfv-NY-tAR" firstAttribute="top" secondItem="Kdl-3X-LNu" secondAttribute="bottom" multiplier="1.4" constant="8" symbolic="YES" id="OOC-IS-oah"/>
+                            <constraint firstAttribute="centerY" secondItem="wvv-b4-nUd" secondAttribute="centerY" id="RaX-64-avJ"/>
+                            <constraint firstAttribute="centerX" secondItem="gOV-vb-sBN" secondAttribute="centerX" id="SKd-jp-jRo"/>
+                            <constraint firstAttribute="bottom" secondItem="yIE-2R-fny" secondAttribute="bottom" multiplier="1.05" constant="20" symbolic="YES" id="UUy-Mz-2SH"/>
+                            <constraint firstItem="yKT-2g-b21" firstAttribute="top" secondItem="8fr-Tl-ePd" secondAttribute="top" constant="20" id="ZFd-RL-H7v"/>
+                            <constraint firstItem="gOV-vb-sBN" firstAttribute="top" secondItem="jfv-NY-tAR" secondAttribute="bottom" multiplier="1.1" constant="8" symbolic="YES" id="ZoJ-g4-dLN"/>
+                            <constraint firstAttribute="centerX" secondItem="wvv-b4-nUd" secondAttribute="centerX" id="eCX-yX-lZT"/>
+                            <constraint firstAttribute="centerX" secondItem="yIE-2R-fny" secondAttribute="centerX" id="eQ3-YL-NAT"/>
+                            <constraint firstItem="yKT-2g-b21" firstAttribute="leading" secondItem="8fr-Tl-ePd" secondAttribute="leading" constant="20" symbolic="YES" id="mYR-aB-zAW"/>
+                        </constraints>
                         <connections>
                             <action selector="backgroundTouched:" destination="UrH-w5-LkV" eventType="touchUpInside" id="jTO-lT-U5T"/>
                             <action selector="backgroundTouched:" destination="UrH-w5-LkV" eventType="valueChanged" id="rLZ-ER-HCQ"/>
