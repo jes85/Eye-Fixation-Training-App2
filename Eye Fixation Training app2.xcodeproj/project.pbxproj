@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F1F1CED19D7B2BA0071E7A7 /* EFTiPadSettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1F1CEC19D7B2BA0071E7A7 /* EFTiPadSettingsTableViewCell.m */; };
 		3F1F1CF019D7B2D00071E7A7 /* EFTiPadSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1F1CEF19D7B2D00071E7A7 /* EFTiPadSettingsTableViewController.m */; };
+		3F2075EA19EDC8EC00D2A29E /* EFTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2075E919EDC8EC00D2A29E /* EFTConstants.m */; };
+		3F27EE1419E8878100088FC0 /* EFTiPadMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F27EE1319E8878100088FC0 /* EFTiPadMainViewController.m */; };
 		3F8E378819C54A7600EE5D54 /* EFTSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E378719C54A7600EE5D54 /* EFTSettingsTableViewController.m */; };
 		3FBF6DB419C386480097F369 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBF6DB319C386480097F369 /* Foundation.framework */; };
 		3FBF6DB619C386480097F369 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBF6DB519C386480097F369 /* CoreGraphics.framework */; };
@@ -42,6 +44,10 @@
 		3F1F1CEC19D7B2BA0071E7A7 /* EFTiPadSettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTiPadSettingsTableViewCell.m; sourceTree = "<group>"; };
 		3F1F1CEE19D7B2D00071E7A7 /* EFTiPadSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTiPadSettingsTableViewController.h; sourceTree = "<group>"; };
 		3F1F1CEF19D7B2D00071E7A7 /* EFTiPadSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTiPadSettingsTableViewController.m; sourceTree = "<group>"; };
+		3F2075E819EDC8EC00D2A29E /* EFTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTConstants.h; sourceTree = "<group>"; };
+		3F2075E919EDC8EC00D2A29E /* EFTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTConstants.m; sourceTree = "<group>"; };
+		3F27EE1219E8878100088FC0 /* EFTiPadMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTiPadMainViewController.h; sourceTree = "<group>"; };
+		3F27EE1319E8878100088FC0 /* EFTiPadMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTiPadMainViewController.m; sourceTree = "<group>"; };
 		3F8E378619C54A7600EE5D54 /* EFTSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTSettingsTableViewController.h; sourceTree = "<group>"; };
 		3F8E378719C54A7600EE5D54 /* EFTSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTSettingsTableViewController.m; sourceTree = "<group>"; };
 		3FB882E219D7416C002BB165 /* Eye Fixation Training app2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eye Fixation Training app2-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -130,12 +136,16 @@
 				3FBF6DC819C386480097F369 /* Main_iPad.storyboard */,
 				3FBF6DCB19C386480097F369 /* EFTViewController.h */,
 				3FBF6DCC19C386480097F369 /* EFTViewController.m */,
+				3F27EE1219E8878100088FC0 /* EFTiPadMainViewController.h */,
+				3F27EE1319E8878100088FC0 /* EFTiPadMainViewController.m */,
 				3F8E378619C54A7600EE5D54 /* EFTSettingsTableViewController.h */,
 				3F8E378719C54A7600EE5D54 /* EFTSettingsTableViewController.m */,
 				3F1F1CEB19D7B2BA0071E7A7 /* EFTiPadSettingsTableViewCell.h */,
 				3F1F1CEC19D7B2BA0071E7A7 /* EFTiPadSettingsTableViewCell.m */,
 				3F1F1CEE19D7B2D00071E7A7 /* EFTiPadSettingsTableViewController.h */,
 				3F1F1CEF19D7B2D00071E7A7 /* EFTiPadSettingsTableViewController.m */,
+				3F2075E819EDC8EC00D2A29E /* EFTConstants.h */,
+				3F2075E919EDC8EC00D2A29E /* EFTConstants.m */,
 				3FBF6DCE19C386480097F369 /* Images.xcassets */,
 				3FBF6DBA19C386480097F369 /* Supporting Files */,
 				3FB882E219D7416C002BB165 /* Eye Fixation Training app2-Bridging-Header.h */,
@@ -271,10 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F27EE1419E8878100088FC0 /* EFTiPadMainViewController.m in Sources */,
 				3F8E378819C54A7600EE5D54 /* EFTSettingsTableViewController.m in Sources */,
 				3FBF6DC419C386480097F369 /* EFTAppDelegate.m in Sources */,
 				3FBF6DC019C386480097F369 /* main.m in Sources */,
 				3F1F1CF019D7B2D00071E7A7 /* EFTiPadSettingsTableViewController.m in Sources */,
+				3F2075EA19EDC8EC00D2A29E /* EFTConstants.m in Sources */,
 				3F1F1CED19D7B2BA0071E7A7 /* EFTiPadSettingsTableViewCell.m in Sources */,
 				3FBF6DCD19C386480097F369 /* EFTViewController.m in Sources */,
 			);

@@ -13,20 +13,84 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Visual Acuity Cell" rowHeight="211" id="tT5-V6-tlm" customClass="EFTiPadSettingsTableViewCell">
-                                <rect key="frame" x="0.0" y="86" width="768" height="211"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VA 20/50" rowHeight="125" id="tT5-V6-tlm" customClass="EFTiPadSettingsTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="768" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tT5-V6-tlm" id="ZI9-KE-DL0">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="210"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="124"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedCross" translatesAutoresizingMaskIntoConstraints="NO" id="rar-62-frA">
-                                            <rect key="frame" x="284" y="5" width="200" height="200"/>
+                                            <rect key="frame" x="334" y="12" width="100" height="100"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="redCrossImageView" destination="rar-62-frA" id="QFb-KC-1VY"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VA 20/100" rowHeight="150" id="WIq-w6-6Sd" customClass="EFTiPadSettingsTableViewCell">
+                                <rect key="frame" x="0.0" y="211" width="768" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WIq-w6-6Sd" id="E6F-ON-4Kc">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="149"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedCross" translatesAutoresizingMaskIntoConstraints="NO" id="2LA-bu-nDC">
+                                            <rect key="frame" x="322" y="12" width="125" height="125"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="redCrossImageView" destination="2LA-bu-nDC" id="LFT-Be-505"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VA 20/200" rowHeight="175" id="0pP-HD-RWp" customClass="EFTiPadSettingsTableViewCell">
+                                <rect key="frame" x="0.0" y="361" width="768" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0pP-HD-RWp" id="Etf-el-rUL">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="174"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedCross" translatesAutoresizingMaskIntoConstraints="NO" id="Tkc-GS-lLa">
+                                            <rect key="frame" x="309" y="12" width="150" height="150"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="redCrossImageView" destination="Tkc-GS-lLa" id="UOo-S0-cqo"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VA 20/400" rowHeight="200" id="JrU-fZ-3Ru" customClass="EFTiPadSettingsTableViewCell">
+                                <rect key="frame" x="0.0" y="536" width="768" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JrU-fZ-3Ru" id="7dW-Zj-jjk">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="199"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedCross" translatesAutoresizingMaskIntoConstraints="NO" id="xnY-9y-9Dh">
+                                            <rect key="frame" x="297" y="12" width="175" height="175"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="redCrossImageView" destination="xnY-9y-9Dh" id="qdQ-4o-BEt"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VA 5' 200" rowHeight="225" id="S20-c9-5NJ" customClass="EFTiPadSettingsTableViewCell">
+                                <rect key="frame" x="0.0" y="736" width="768" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S20-c9-5NJ" id="B3t-el-Fjp">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="224"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedCross" translatesAutoresizingMaskIntoConstraints="NO" id="iZS-Hy-493">
+                                            <rect key="frame" x="284" y="12" width="200" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="redCrossImageView" destination="iZS-Hy-493" id="Qx8-7e-nbc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -39,60 +103,119 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQS-4y-iLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="1274"/>
+            <point key="canvasLocation" x="1237" y="1074"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="Th4-wO-DU6">
             <objects>
-                <viewController id="UrH-w5-LkV" customClass="EFTViewController" sceneMemberID="viewController">
+                <viewController id="UrH-w5-LkV" customClass="EFTiPadMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3lS-4n-tt7"/>
                         <viewControllerLayoutGuide type="bottom" id="26p-2M-Eik"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8fr-Tl-ePd">
+                    <view key="view" contentMode="scaleToFill" id="8fr-Tl-ePd" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdl-3X-LNu">
-                                <rect key="frame" x="363" y="43" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdl-3X-LNu">
+                                <rect key="frame" x="297" y="52" width="175" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfv-NY-tAR">
-                                <rect key="frame" x="363" y="109" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identify the center of the cross and fixate on it for 10 seconds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="jfv-NY-tAR">
+                                <rect key="frame" x="134" y="148" width="500" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="eNW-oE-ueZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOV-vb-sBN">
-                                <rect key="frame" x="363" y="184" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap anywhere to change the location of the cross!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="gOV-vb-sBN">
+                                <rect key="frame" x="134" y="250" width="500" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="xpg-u6-bqd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rJq-32-upX">
-                                <rect key="frame" x="16" y="206" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedCross" translatesAutoresizingMaskIntoConstraints="NO" id="rJq-32-upX">
+                                <rect key="frame" x="32" y="292" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIE-2R-fny">
-                                <rect key="frame" x="111" y="643" width="547" height="324"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvv-b4-nUd">
-                                <rect key="frame" x="234" y="233" width="300" height="300"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvv-b4-nUd">
+                                <rect key="frame" x="234" y="362" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0Wf-cs-WhH"/>
+                                    <constraint firstAttribute="height" constant="300" id="cKU-mf-eET"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Start" backgroundImage="Circle">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="UrH-w5-LkV" eventType="touchUpInside" id="qya-SQ-D44"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IllinoisRetinaCenter" translatesAutoresizingMaskIntoConstraints="NO" id="yIE-2R-fny">
+                                <rect key="frame" x="194" y="718" width="380" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="238" id="Hmz-wc-hP8"/>
+                                    <constraint firstAttribute="width" constant="380" id="vyy-f9-cnw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKT-2g-b21">
+                                <rect key="frame" x="20" y="20" width="161" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="rgT-nP-ni6"/>
+                                    <constraint firstAttribute="height" constant="83" id="wog-CV-D1i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Directions" backgroundImage="Rectangle">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="directionsButtonTouched:" destination="UrH-w5-LkV" eventType="touchUpInside" id="mWn-9u-GaD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jfv-NY-tAR" secondAttribute="centerX" id="4OB-LB-8VT"/>
+                            <constraint firstItem="wvv-b4-nUd" firstAttribute="top" secondItem="gOV-vb-sBN" secondAttribute="bottom" multiplier="1.1" constant="8" symbolic="YES" id="5ux-fG-huW"/>
+                            <constraint firstAttribute="centerX" secondItem="Kdl-3X-LNu" secondAttribute="centerX" id="C50-ln-UCK"/>
+                            <constraint firstItem="jfv-NY-tAR" firstAttribute="top" secondItem="Kdl-3X-LNu" secondAttribute="bottom" multiplier="1.4" constant="8" symbolic="YES" id="OOC-IS-oah"/>
+                            <constraint firstAttribute="centerY" secondItem="wvv-b4-nUd" secondAttribute="centerY" id="RaX-64-avJ"/>
+                            <constraint firstAttribute="centerX" secondItem="gOV-vb-sBN" secondAttribute="centerX" id="SKd-jp-jRo"/>
+                            <constraint firstAttribute="bottom" secondItem="yIE-2R-fny" secondAttribute="bottom" multiplier="1.05" constant="20" symbolic="YES" id="UUy-Mz-2SH"/>
+                            <constraint firstItem="yKT-2g-b21" firstAttribute="top" secondItem="8fr-Tl-ePd" secondAttribute="top" constant="20" id="ZFd-RL-H7v"/>
+                            <constraint firstItem="gOV-vb-sBN" firstAttribute="top" secondItem="jfv-NY-tAR" secondAttribute="bottom" multiplier="1.1" constant="8" symbolic="YES" id="ZoJ-g4-dLN"/>
+                            <constraint firstAttribute="centerX" secondItem="wvv-b4-nUd" secondAttribute="centerX" id="eCX-yX-lZT"/>
+                            <constraint firstAttribute="centerX" secondItem="yIE-2R-fny" secondAttribute="centerX" id="eQ3-YL-NAT"/>
+                            <constraint firstItem="yKT-2g-b21" firstAttribute="leading" secondItem="8fr-Tl-ePd" secondAttribute="leading" constant="20" symbolic="YES" id="mYR-aB-zAW"/>
+                        </constraints>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="UrH-w5-LkV" eventType="touchUpInside" id="jTO-lT-U5T"/>
+                            <action selector="backgroundTouched:" destination="UrH-w5-LkV" eventType="valueChanged" id="rLZ-ER-HCQ"/>
+                        </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="AVd-Lk-6bc"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home Icon" id="AVd-Lk-6bc"/>
+                    <connections>
+                        <outlet property="directionsButton" destination="yKT-2g-b21" id="2D4-IB-Mze"/>
+                        <outlet property="illinoisRetinaCenterImageView" destination="yIE-2R-fny" id="rB8-G8-2ki"/>
+                        <outlet property="instructionLabel1" destination="jfv-NY-tAR" id="2I6-Cc-lRU"/>
+                        <outlet property="instructionLabel2" destination="gOV-vb-sBN" id="lg5-2Z-JiW"/>
+                        <outlet property="redCrossImageView" destination="rJq-32-upX" id="XzD-DA-4Bf"/>
+                        <outlet property="startButton" destination="wvv-b4-nUd" id="JjP-wn-MFo"/>
+                        <outlet property="titleLabel" destination="Kdl-3X-LNu" id="apZ-Sa-bYg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzP-mq-4tY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-488" y="-273"/>
+            <point key="canvasLocation" x="1225" y="-176"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Iaq-uq-XoZ">
@@ -117,7 +240,7 @@
         <scene sceneID="pJN-bp-V7C">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tgj-uB-M8n" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="afU-QV-QXI"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings Icon" id="afU-QV-QXI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XQ9-aB-3Lu">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
@@ -135,7 +258,11 @@
     </scenes>
     <resources>
         <image name="Circle" width="316" height="297"/>
+        <image name="Home Icon" width="30" height="30"/>
+        <image name="IllinoisRetinaCenter" width="250" height="144"/>
+        <image name="Rectangle" width="241" height="72"/>
         <image name="RedCross" width="113" height="113"/>
+        <image name="Settings Icon" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
