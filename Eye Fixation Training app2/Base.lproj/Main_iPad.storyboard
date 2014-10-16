@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="q3R-3E-Fsn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Settings-->
@@ -105,7 +106,7 @@
             </objects>
             <point key="canvasLocation" x="1237" y="1074"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="Th4-wO-DU6">
             <objects>
                 <viewController id="UrH-w5-LkV" customClass="EFTiPadMainViewController" sceneMemberID="viewController">
@@ -236,7 +237,7 @@
             </objects>
             <point key="canvasLocation" x="-1433" y="357"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="pJN-bp-V7C">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tgj-uB-M8n" sceneMemberID="viewController">

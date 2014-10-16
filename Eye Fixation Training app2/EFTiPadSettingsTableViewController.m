@@ -28,7 +28,9 @@
 @interface EFTiPadSettingsTableViewController ()
 
 @property (nonatomic) NSDictionary *VASizes;
-@property (nonatomic) NSArray *rowHeights;
+@property (nonatomic) NSMutableArray *VACellReuseIdentifiers;
+@property (nonatomic) NSMutableArray *VACellRowHeights;
+
 @end
 
 @implementation EFTiPadSettingsTableViewController
@@ -41,8 +43,6 @@
     
     EFTViewController *vc = (EFTViewController *)[self.tabBarController.viewControllers objectAtIndex:0];
     self.VASizes = vc.VASizes;
-    self.rowHeights = @[@100, @150, @200, @250, @300];
-
     
     
     self.VACellReuseIdentifiers = [[NSMutableArray alloc]initWithCapacity:[self.visualAcuityList count]];
@@ -68,7 +68,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return [self.rowHeights[indexPath.row] floatValue];
+    return kHeaderHeight;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -78,17 +78,8 @@
     NSString *visualAcuity =self.visualAcuityList[indexPath.row];
     cell.textLabel.text =visualAcuity;
     
-    // Set red cross size based on visual acuity
-    NSValue *value = [self.VASizes objectForKey:visualAcuity];
-    CGSize size = [value CGSizeValue];
-    CGPoint origin = cell.redCrossImageView.frame.origin;
-    CGRect frame = CGRectMake(origin.x, origin.y, size.width, size.height);
-    cell.redCrossImageView.frame = frame;
-    
+    // Display image
     [cell.contentView addSubview:cell.redCrossImageView];
-    NSLog(@"%f", cell.redCrossImageView.frame.size.height);
-    
-    
     
     // Display checkmark for cell that was previously selected
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -99,7 +90,6 @@
     
     return cell;
 }
-
 
 
 @end
