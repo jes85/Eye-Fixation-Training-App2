@@ -7,19 +7,14 @@
 //
 
 #import "EFTViewController.h"
+#import "EFTConstants.h"
 
 
-#define kVisualAcuity1          @"20/50"
-#define kVisualAcuity2          @"20/100"
-#define kVisualAcuity3          @"20/200"
-#define kVisualAcuity4          @"20/400"
-#define kVisualAcuity5          @"5' 200"
-
-#define kVisualAcuitySetting    @"Visual Acuity Setting"
 static const CGFloat kShrinkFactor = .8;
 
 
 @interface EFTViewController ()
+@property (weak, nonatomic) IBOutlet UITabBarItem *tabBar;
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *instructionLabel1;
@@ -192,6 +187,7 @@ static const CGFloat kShrinkFactor = .8;
     [self displayLabels];
    
 }
+
 
 
 

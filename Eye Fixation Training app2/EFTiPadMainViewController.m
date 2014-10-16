@@ -9,6 +9,7 @@
 #import "EFTiPadMainViewController.h"
 
 @interface EFTiPadMainViewController ()
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *instructionLabel1;
 @property (weak, nonatomic) IBOutlet UILabel *instructionLabel2;
