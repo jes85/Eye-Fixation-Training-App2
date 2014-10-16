@@ -19,7 +19,6 @@
 #define kSettingsTitle                      @"Select Visual Acuity"
 
 
-
 @interface EFTConstants : NSObject
 
 @end
