@@ -188,7 +188,15 @@ static const CGFloat kShrinkFactor = .8;
    
 }
 
-
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    NSLog(@"Checking orientation %d", interfaceOrientation);
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+-(BOOL)shouldAutorotate{
+    return NO;
+}
 
 
 @end
