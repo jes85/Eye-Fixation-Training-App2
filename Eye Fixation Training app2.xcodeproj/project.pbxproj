@@ -50,7 +50,6 @@
 		3F27EE1319E8878100088FC0 /* EFTiPadMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTiPadMainViewController.m; sourceTree = "<group>"; };
 		3F8E378619C54A7600EE5D54 /* EFTSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTSettingsTableViewController.h; sourceTree = "<group>"; };
 		3F8E378719C54A7600EE5D54 /* EFTSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTSettingsTableViewController.m; sourceTree = "<group>"; };
-		3FB882E219D7416C002BB165 /* Eye Fixation Training app2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eye Fixation Training app2-Bridging-Header.h"; sourceTree = "<group>"; };
 		3FBF6DB019C386480097F369 /* Eye Fixation Training app2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eye Fixation Training app2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBF6DB319C386480097F369 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FBF6DB519C386480097F369 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,7 +147,6 @@
 				3F2075E919EDC8EC00D2A29E /* EFTConstants.m */,
 				3FBF6DCE19C386480097F369 /* Images.xcassets */,
 				3FBF6DBA19C386480097F369 /* Supporting Files */,
-				3FB882E219D7416C002BB165 /* Eye Fixation Training app2-Bridging-Header.h */,
 			);
 			path = "Eye Fixation Training app2";
 			sourceTree = "<group>";
