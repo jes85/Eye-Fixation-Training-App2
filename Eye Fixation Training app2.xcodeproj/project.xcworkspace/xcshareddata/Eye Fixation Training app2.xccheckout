@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1EDE0842-E992-4EF1-81EC-B00314116064</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8BFAE0B6DE534654CCDA8A571382886E48C58F94</key>
+		<string>https://github.com/jes85/Eye-Fixation-Training-App-.git</string>
+		<key>DAFCFA48D26DCD5F96F202A274D2874F030E4979</key>
+		<string>https://github.com/jes85/Eye-Fixation-Training-App-.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8BFAE0B6DE534654CCDA8A571382886E48C58F94</key>
+		<string>Eye%20Fixation%20Training%20app2</string>
+		<key>DAFCFA48D26DCD5F96F202A274D2874F030E4979</key>
+		<string>Eye%20Fixation%20Training%20app2/Eye%20Fixation%20Training%20app2</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jes85/Eye-Fixation-Training-App-.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8BFAE0B6DE534654CCDA8A571382886E48C58F94</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8BFAE0B6DE534654CCDA8A571382886E48C58F94</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Eye%20Fixation%20Training%20app2</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DAFCFA48D26DCD5F96F202A274D2874F030E4979</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Eye%20Fixation%20Training%20app2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
