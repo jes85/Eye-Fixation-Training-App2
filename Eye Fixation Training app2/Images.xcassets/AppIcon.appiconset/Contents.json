@@ -3,61 +3,61 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "Fixation Training Logo.58pt .png",
+      "filename" : "AppIcon29x29@2x-1.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "Fixation Training Logo.80pt .png",
+      "filename" : "AppIcon40x40@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "eft120.png",
+      "filename" : "AppIcon60x60@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "eft180.png",
+      "filename" : "AppIcon60x60@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "Fixation Training Logo.29.pt.png",
+      "filename" : "AppIcon29x29@1x.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "Fixation Training Logo.58pt -1.png",
+      "filename" : "AppIcon29x29@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "Fixation Training Logo.40.pt.png",
+      "filename" : "AppIcon40x40@1x.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "Fixation Training Logo.80pt -1.png",
+      "filename" : "AppIcon40x40@2x-1.png",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "Fixation Training Logo.76.pt.png",
+      "filename" : "AppIcon76x76@1x.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "Fixation Training Logo.152pt.png",
+      "filename" : "AppIcon76x76@2x.png",
       "scale" : "2x"
     }
   ],
